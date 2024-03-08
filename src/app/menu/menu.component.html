@@ -1,0 +1,54 @@
+
+<mat-sidenav-container class="m-sidenav-container">
+  
+  <mat-sidenav
+    [ngClass]="{ 'm-sidenav': true, 'm-sidenav-small': sidenavSmall }"
+    mode="side"
+    fixedInViewport="true"
+    opened
+    #sidenav
+  >
+    <div class="m-sidenav__handle"></div>
+    <div>
+      <button mat-icon-button class="Menu-hamburguesa" aria-label="Example icon-button with menu icon" (click)="sidenavToggle()" >
+        <mat-icon>widgets</mat-icon>
+      </button>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content [ngClass]="{ 'm-main': true, 'm-main-large': sidenavSmall }" 
+  style="height: 110%;">
+  <h1>Bienvenido Carlos</h1>
+  <h5>Verifica tus alertas</h5>
+
+  <mat-card style="height: 110%;">
+    <mat-card-header>
+      <div class="card-container">
+        <!-- Primera fila de tarjetas -->
+        <mat-card>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+       
+
+          <app-weather></app-weather>
+        </mat-card>
+        <mat-card>
+          <p>Contenido de la segunda tarjeta</p>
+        </mat-card>
+      </div>
+  
+      <div class="card-container">
+        <!-- Segunda fila de tarjetas -->
+        <mat-card>
+          <p>Contenido de la tercera tarjeta</p>
+        </mat-card>
+        <mat-card>
+          <p>Contenido de la cuarta tarjeta</p>
+        </mat-card>
+      </div>
+    </mat-card-header>
+  </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,66 @@
+p {
+    font-family: Lato;
+  }
+  
+   .m-toolbar{
+      position: fixed;
+      z-index: 2;
+      background-color: red;
+    }
+  
+    .m-main{
+      padding: 1rem 2rem 4rem;
+      margin-top: 0.1rem;
+      transition: all 0.24s ease-in-out 0s;
+    }
+    
+    
+    .m-main-large{
+      margin-left:50px !important;
+    }
+   
+    .m-sidenav{
+      margin-top:4rem;
+      width: 300px;
+      min-height: 100%;
+      background-color: white;
+      transition: all 0.24s ease-in-out 0s;
+    }
+  
+      .m-sidenav-small{
+        width:50px;
+      }
+  
+      .m-sidenav-container{
+      min-height: 88%;
+      background-color: #E1E1E1;
+    }
+
+    .mat-toolbar button.mat-icon-button.mat-primary {
+        color: black;
+    }
+
+    .m-sidenav-container {
+        height: 80vh; /* El 80% de la altura del contenedor padre */
+      }
+
+    .mat-sidenav-content {
+        height: 500px; /* Puedes ajustar el valor según tus necesidades */
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Esto distribuirá las tarjetas uniformemente */
+        
+      }
+
+      mat-card mat-card {
+        height: 270px;
+        width: 450px; /* Esto asegurará que haya espacio para dos tarjetas en una fila */
+        margin-bottom: 1px; /* Espacio entre las tarjetas */
+        display: flex;
+        flex-wrap: wrap;
+      }
+     
+
+      

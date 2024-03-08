@@ -1,0 +1,33 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+ .logo{
+    height: auto;
+    width: 5%;
+ }
+ .Menu-hamburguesa{
+    padding-left: 80px;
+ }
+
+ .button {
+    color: white;
+  }
+
+  /* profile image */
+  .profile-picture {
+    margin-left: auto; /* Mueve la imagen de perfil hacia la esquina derecha */
+  }
+  
+  .profile-picture img {
+    width: 30px; /* Ajusta el tamaño según tus necesidades */
+    height: 30px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+    margin-top: 5px; /* Ajusta el margen superior según tus necesidades */
+  }
+
+  .app-sidenav {
+    width: 100vw;
+    height: 100vh;
+  }
